@@ -109,8 +109,8 @@ export LD_LIBRARY_PATH="/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"
 
 Begin by cloning this repository and all its submodules using the following command:
 ```sh
-$ git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
-$ cd tiny-cuda-nn
+git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
+cd tiny-cuda-nn
 ```
 
 Then, use CMake to build the project: (on Windows, this must be in a [developer command prompt](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-160#developer_command_prompt))
@@ -138,8 +138,10 @@ pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/to
 
 Alternatively, if you would like to install from a local clone of __tiny-cuda-nn__, invoke
 ```sh
-tiny-cuda-nn$ cd bindings/torch
-tiny-cuda-nn/bindings/torch$ python setup.py install
+# in path tiny-cuda-nn
+cd bindings/torch
+# now at tiny-cuda-nn/bindings/torch$ 
+python setup.py install
 ```
 
 Upon success, you can use __tiny-cuda-nn__ models as in the following example:
